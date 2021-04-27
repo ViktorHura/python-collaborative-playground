@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <title>Python Learning</title>
+    <link rel="stylesheet"
+          href="./bower_components/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet"
+          href="./bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/generatedstyle.css"/>
+
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+
+  </head>
+  
+  <body>
+    <header>
+      <div id="top-header">
+        <div class="container" style="width: inherit">
+          <div class="text-center">
+            <div id="menu-center-header" style="display:inline-block"></div>
+            <div id="menu-right-header" class="pull-right"></div>
+          </div>
+          </div>
+      </div>
+    </header>
+
+    <section class="main">
+      <div id="documents"></div>
+      <div id="layers"></div>
+    </section>
+
+
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js">
+    </script>
+    <script src="./bower_components/zeroclipboard/dist/ZeroClipboard.min.js">
+    </script>
+    <script
+       src="./bower_components/jquery-shadow-animation/jquery.animate-shadow-min.js">
+    </script>
+
+    <script src="./bower_components/jquery-crate/build/jquery-crate.bundle.js">
+    </script>
+
+    <script src="./js/view/version.js"></script>
+    <script src="./js/view/roundbutton.js"></script>
+    <script src="./js/view/documents.js"></script>
+    <script src="./js/view/layers.js"></script>
+    <script src="./js/controller/savebutton.js"></script>
+    <script src="./js/controller/adddocument.js"></script>
+    <script src="./js/controller/github.js"></script>
+    <script src="./js/view/modaladddocument.js"></script>
+    <script src="./js/model/model.js"></script>
+
+    <script src="./js/main.js"></script>
+
+    <script type="text/javascript">
+
+      // let loop = setInterval(function () {
+      //   if ($(".ace_content")[0]){
+      //      //console.log('exists');
+      //   } else {
+      //       //console.log('nope');
+      //   }
+      // }, 1000);
+
+      function getText(){
+        if ($(".ace_content")[0]) {
+          return window.myeditor.getValue()
+        }else{
+          return ""
+        }
+      }
+
+    </script>
+
+    <iframe src = "/turtle.html" width="100%" height="100%">
+         Sorry your browser does not support inline frames.
+    </iframe>
+
+  </body>
+</html>
